@@ -46,6 +46,10 @@ body #aksha-navbar .nav-item i {
   color: #b72d41;
   font-size: 13px;
 }
+body #aksha-navbar .nav-item .dropdown-menu {
+  border-radius: 0px;
+  font-size: 0.9rem;
+}
 @media (min-width: 768px) {
   body #aksha-navbar .navbar-brand img {
     width: 100%;

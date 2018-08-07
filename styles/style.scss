@@ -52,6 +52,11 @@ body {
 				color: #b72d41;
 				font-size: 13px;
 			}
+
+			.dropdown-menu {
+				border-radius: 0px;
+				font-size: 0.9rem;
+			}
 		}
 
 
@@ -128,7 +133,6 @@ body {
 				max-width: 255px;
 				width: 100%;
 			}
-
 		}
 
 		.some-latest-articles {
