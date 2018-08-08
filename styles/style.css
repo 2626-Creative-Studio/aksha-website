@@ -116,7 +116,7 @@ body #aksha .some-latest-articles {
   font-weight: 700;
 }
 body #aksha .some-latest-articles img {
-  max-width: 250px;
+  max-width: 100%;
 }
 body #aksha .some-latest-articles h4 {
   font-weight: 700;
@@ -125,7 +125,6 @@ body #aksha .some-latest-articles p, body #aksha .some-latest-articles a {
   position: relative;
   color: #ffffff;
   top: -6rem;
-  max-width: 200px;
   font-size: 0.8rem;
   margin: 0px auto;
   text-align: left;
