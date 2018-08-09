@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: baskerville-old-face;
-	src: url(./fonts/baskvill.ttf);
+	src: url(../fonts/baskvill.ttf);
 }
 
 #aksha {
@@ -82,7 +82,16 @@
 					z-index: -1;
 
 
+					@media (max-width: 1024px) and (min-width: 576px) {
+						margin-left: -10rem;
+						margin-top: -25rem;
+						max-width: 20rem;
+					}
+
 					@media (max-width: 576px) {
+						margin-left: -5rem;
+						margin-top: -15rem;
+						max-width: 10rem;
 					}
 
 					@keyframes rotate360 {
@@ -99,12 +108,27 @@
 					font-family: baskerville-old-face;
 					text-align: center;
 					font-size: 2rem;
-					width: 400px;
+					width: 100%;
+					max-width: 400px;
 					height: 150px;
 					top: 50%;
 					left: 50%;
 					margin-top: -75px;
 					margin-left: -200px;
+
+					@media (max-width: 1024px) {
+						font-size: 2.9rem;
+						max-width: 600px;
+						margin-top: -20px;
+						margin-left: -300px;
+					}
+
+					@media (max-width: 576px) {
+						font-size: 1.5rem;
+						max-width: 300px;
+						margin-top: -25px;
+						margin-left: -150px;
+					}
 				}
 
 				.vr {
@@ -112,9 +136,17 @@
 					height: 100px;
 					top: 50%;
 					left: 50%;
-					margin-top: 50px;
+					margin-top: 70px;
 					margin-left: -25px;
 					cursor: pointer;
+
+					@media (max-width: 576px) {
+						margin-top: 90px;
+					}
+
+					@media (max-width: 1024px ) and (min-width: 576px) {
+						margin-top: 250px;
+					}
 
 					hr {
 						border: none;
@@ -130,6 +162,8 @@
 			background-color: #FCFCF6;
 			padding: 3rem;
 			border-top: 5px solid transparent;
+			-webkit-border-image: url(../../images/homepage/second-section/colored-line.jpg) 20% round;
+			-o-border-image: url(../../images/homepage/second-section/colored-line.jpg) 20% round;
 			border-image: url(../../images/homepage/second-section/colored-line.jpg) 20% round;
 
 			@media (max-width: 576px) {
@@ -153,12 +187,15 @@
 			.latest-talk {
 				background: #F7F7F9;
 				cursor: pointer;
+				transition: 0.3s ease-in;
 
 				img {
 					width: 100%;
 				}
 
-				p {
+				&:hover {
+					background: #000;
+					color: #fff;
 				}
 			}
 		}
@@ -172,7 +209,7 @@
 				width: 100%;
 				max-width: 450px;
 				margin: 0px auto;
-				transition: 0.5s;
+				transition: 0.3s ease;
 
 				&:hover {
 					background: #000;
