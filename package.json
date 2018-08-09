@@ -1,13 +1,13 @@
 {
   "name": "aksha",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple HTML",
   "main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "browser-sync start --server --files styles/*.css scripts/*.js *.html"
+		"start": "browser-sync start --server --files *.html assets/styles/homepage/homepage.css"
 	},
   "keywords": [],
-  "author": "",
+  "author": "Akshay Jain",
   "license": "ISC"
 }
