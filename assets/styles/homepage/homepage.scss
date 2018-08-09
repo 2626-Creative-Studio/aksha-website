@@ -36,6 +36,25 @@
 			outline: none;
 		}
 
+		.navbar-nav {
+			.show {
+				background: #444;
+
+				a {
+					color: #fff;
+					
+					&:hover {
+						background: #282b2b;
+					}
+				}
+
+				.dropdown-item{
+					padding: 13px;
+				}
+
+			}
+		}
+
 		.nav-item {
 			font-size: 0.9rem;
 
@@ -151,8 +170,16 @@
 					hr {
 						border: none;
 						border-left: 1px solid hsla(200, 10%, 50%,100);
-						height: 5vh;
+						height: 1vh;
 						width: 1px;
+
+						@keyframes line {
+							to {
+								transform: scaleY(5);
+							}
+						}
+
+						animation: 2s line infinite ease-in-out;
 					}
 				}
 			}
@@ -179,9 +206,10 @@
 			}
 
 			input {
-				background: #F7F7F9;
+				background: #fff;
 				padding: 8px 12px;
 				border: none;
+				width: 80%;
 			}
 
 			.latest-talk {
@@ -194,7 +222,7 @@
 				}
 
 				&:hover {
-					background: #000;
+					background: #444444;
 					color: #fff;
 				}
 			}
@@ -212,7 +240,7 @@
 				transition: 0.3s ease;
 
 				&:hover {
-					background: #000;
+					background: #444444;
 					color: #fff;
 					cursor: pointer;
 
