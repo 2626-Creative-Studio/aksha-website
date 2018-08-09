@@ -1,0 +1,163 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
+
+@font-face {
+	font-family: baskerville-old-face;
+	src: url(../fonts/baskvill.ttf);
+}
+
+#aksha {
+
+	h3, h4 {
+		font-family: 'Lato', sans-serif;
+		font-weight: 700;
+	}
+
+	p {
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+	}
+
+	#aksha-navbar {
+		background-color: #ffffff !important;
+		border-bottom: 1px solid #eee;
+		box-shadow: 0px 0px 15px #eee;
+		font-family: Verdana;
+
+		.navbar-brand img {
+			width: 100%;
+			max-width: 120px;
+		}
+
+		.navbar-toggler {
+			border: none;
+		}
+
+		.navbar-toggler:focus {
+			outline: none;
+		}
+
+		.navbar-nav {
+			.show {
+				background: #444;
+
+				a {
+					color: #fff;
+
+					&:hover {
+						background: #282b2b;
+					}
+				}
+
+				.dropdown-item {
+					padding: 13px;
+				}
+			}
+		}
+
+		.nav-item {
+			font-size: 0.9rem;
+
+			i {
+				color: #b72d41;
+				font-size: 13px;
+			}
+
+			.dropdown-menu {
+				border-radius: 0px;
+				font-size: 0.9rem;
+			}
+		}
+
+
+
+		@media (min-width: 768px) {
+			.navbar-brand img {
+				width: 100%;
+				max-width: 120px;
+			}
+
+			.nav-item {
+				margin-right: 20px;
+			}
+		}
+	}
+
+	#aksha-section {
+		.first-section {
+		}
+
+
+		.second-section {
+			margin-bottom: 8rem;
+			text-align: center;
+
+			.bdr{
+				border-bottom: 2px solid #eee;
+				.text-light{
+					color:#ddd!important;
+				}
+			}
+			.bdr-btm {
+				font-size: 1rem;
+				display:inline-block;
+				border-bottom: 2px solid #f99f27;
+			}
+
+			.featured-article {
+				background: #FCFCF6;
+				width: 100%;
+				max-width: 450px;
+				margin: 0px auto;
+				transition: 0.3s ease;
+
+				&:hover {
+					background: #444444;
+					color: #fff;
+					cursor: pointer;
+
+					a {
+						color: #fff;
+					}
+				}
+
+				img {
+					width: 100%;
+				}
+
+				p {
+					text-align: left;
+					font-size: 0.8rem;
+					font-weight: bold;
+					padding-left: 1rem;
+					padding-top: 1rem;
+				}
+
+				a {
+					color: #000;
+					text-decoration: underline;
+					text-align: left;
+					display: block;
+					font-size: 0.7rem;
+					padding-left: 1rem;
+					padding-bottom: 1rem;
+				}
+			}
+		}
+	}
+
+	#aksha-footer {
+		color: #ffffff;
+		background-color: #1c1d20;
+		font-size: 0.8rem;
+
+		p {
+			font-weight: 300;
+		}
+
+		a {
+			color: #ffffff;
+			border: 1px solid #333437;
+			display: inline-block;
+		}
+	}
+}
