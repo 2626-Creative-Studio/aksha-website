@@ -253,6 +253,9 @@
 					a {
 						color: #fff;
 					}
+					span{
+						color: #fff;
+					}
 				}
 
 				img {
@@ -340,6 +343,10 @@
 				border: none;
 				width: 100%;
 				border-radius: .25rem;
+				color: #fff;
+				&:focus{
+					outline: none;
+				}
 			}
 
 			::placeholder {
